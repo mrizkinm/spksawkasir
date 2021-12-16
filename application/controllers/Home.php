@@ -97,7 +97,7 @@ class Home extends CI_Controller {
 					'id_calon' => $key->id,
 					'hasil' => $arr['hasil']
 				];
-				// $this->mhome->insert_data($data_hasil, 'hasil');
+				$this->mhome->insert_data($data_hasil, 'hasil');
 			}
 			array_push($rank, $arr);
 		}
